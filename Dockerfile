@@ -1,11 +1,12 @@
 
-FROM node
+FROM node:current-alpine3.14
 
 WORKDIR /usr/src/app
 
-COPY ./ /usr/src/app/
+COPY dist/SugamahAngular/* /usr/src/app/
+#COPY 
 
 RUN npm install
 
-EXPOSE 3003
-CMD [ "npm", "start" ]
+EXPOSE 4200
+CMD [ "ng", "serve" ]
