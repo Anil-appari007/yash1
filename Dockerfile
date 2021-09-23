@@ -9,4 +9,4 @@
 
 
 FROM nginx:alpine
-COPY dist/SugamahAngular/* /usr/share/nginx/html
+COPY dist/SugamahAngular/* /usr/share/nginx/html/
